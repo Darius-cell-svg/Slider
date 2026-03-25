@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p>Native range</p>
+        <div class="wrapper_inner">
+            <label for="r">0</label>
+            <input type="range" min="0" max="100" name="" step="5" id="r">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <p>Custom range</p>
+        <div class="range">
+            <div class="range_display">
+                <p>0</p>
+            </div>
+            <div class="range_track">
+                <button type="button" class="range_control"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>

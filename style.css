@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.wrapper_inner {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.range_display p {
+    margin: 0;
+    min-width: 30px;
+    text-align: center;
+}
+
+.range_track {
+    position: relative;
+    width: 300px;
+    height: 6px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.range_control {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: aqua;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.range_control:hover {
+    background-color: #00a0a0;
+}
+
+.range_control:active {
+    cursor: grabbing;
+}
